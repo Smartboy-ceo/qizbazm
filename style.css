@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'SamsungSharpSans';
+    src: url('SamsungSharpSans-Bold.ttf') format('truetype');
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'SamsungSharpSans', sans-serif;
+    color: #000;
+    background: url(/a2fe4547-92da-4c36-ace4-9f24af9fcff8.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    width: 60%;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    margin: 2rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    animation: blink 0.6s alternate infinite;
+  }
+  @keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  .content {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .countdown {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  .count-item {
+    text-align: center;
+  }
+  .count-number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .count-label {
+    font-size: 1rem;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 230.52px;
+    min-height: 56px;
+    font-family: calibri;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .btn-primary {
+    background-color: #198754;
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background-color: #157347;
+  }
+  .btn-primary:active {
+    box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, .5);
+  }
+  .yellow {
+    border: 2px solid #1567f4;
+    color: rgb(22, 104, 245);
+    background-color: #fff;
+  }
+  .yellow:hover ion-icon {
+    transform: translateX(10px);
+  }
+  .btn span {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  ion-icon {
+    font-size: 2em;
+    transition: all 0.5s linear;
+  }
+  .btn:hover ion-icon {
+    transform: rotate(-90deg);
+  }
+  .btn-group {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
